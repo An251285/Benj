@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benj Acosta - Independent Insurance Adjusting Firm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: serif;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .nav-item.active {
+            border-bottom: 2px solid #b45309;
+            color: #b45309;
+        }
+        .footer-brown {
+            background-color: #5D4037;
+        }
+        .footer-brown-light {
+            color: #D7CCC8;
+        }
+        .footer-brown-lighter {
+            color: #EFEBE9;
+        }
+        .footer-brown-border {
+            border-color: #4E342E;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white text-gray-800">
+    <!-- Header & Navigation -->
+    <header class="flex justify-between items-center px-12 py-6 bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="logo ml-8">
+            <img src="logo.png" alt="Benj Acosta Logo" class="h-40 w-auto">
+        </div>
+        <nav>
+            <ul class="flex gap-10">
+                <li class="nav-item active cursor-pointer py-2 px-4 border-b-2 border-transparent transition-all duration-300 text-lg font-medium capitalize hover:border-amber-700 hover:text-amber-700" onclick="showSection('home')">Home</li>
+                <li class="nav-item cursor-pointer py-2 px-4 border-b-2 border-transparent transition-all duration-300 text-lg font-medium capitalize hover:border-amber-700 hover:text-amber-700" onclick="showSection('about')">About</li>
+                <li class="nav-item cursor-pointer py-2 px-4 border-b-2 border-transparent transition-all duration-300 text-lg font-medium capitalize hover:border-amber-700 hover:text-amber-700" onclick="showSection('team')">Team</li>
+                <li class="nav-item cursor-pointer py-2 px-4 border-b-2 border-transparent transition-all duration-300 text-lg font-medium capitalize hover:border-amber-700 hover:text-amber-700" onclick="showSection('services')">Services</li>
+                <li class="nav-item cursor-pointer py-2 px-4 border-b-2 border-transparent transition-all duration-300 text-lg font-medium capitalize hover:border-amber-700 hover:text-amber-700" onclick="showSection('contact')">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active w-full">
+            <div class="w-full mb-16">
+                <img src="imagen.png" alt="Independent Adjusting Firm - Benj Acosta" class="w-full h-auto object-cover">
+            </div>
+
+            <div class="bg-white p-12 mx-16 my-16 border-l-4 border-amber-700">
+                <p class="italic text-lg leading-relaxed mb-6">
+                    "We're loyal to the Insurance Company, its General Agent, the agent who solicits, the Producer, the
+                    Authorities regulating the Industry, the Public we serve, and, above all, to Ourselves."
+                </p>
+                <p class="text-amber-700 font-bold">— Benjamin Acosta, Sr.</p>
+            </div>
+
+            <div class="flex max-w-6xl mx-auto my-24 px-16 gap-20 items-center">
+                <div class="flex-1">
+                    <img src="imagen1.png" alt="Our heritage" class="w-full h-96 object-cover rounded-lg">
+                </div>
+                <div class="flex-1 pl-8">
+                    <h2 class="text-4xl text-gray-800 mb-8">Our heritage</h2>
+                    <p class="text-base leading-relaxed mb-8 text-gray-600">
+                        We are a family-owned business established in 1949, dedicated to delivering comprehensive insurance
+                        investigations and settlements. Our experience shapes our commitment to excellence. Your story
+                        matters, and we are here to support your journey.
+                    </p>
+                    <button class="bg-gray-800 text-white px-8 py-4 rounded-full text-base hover:bg-gray-600 transition-colors" onclick="showSection('about')">
+                        Learn more
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section max-w-6xl mx-auto p-16">
+            <h1 class="text-5xl text-gray-800 mb-16">About Us</h1>
+            <div class="flex gap-20 mb-20">
+                <div class="flex-1 pr-8">
+                    <h3 class="text-xl text-amber-700 mb-6 font-bold">A Lifelong Legacy</h3>
+                    <p class="text-sm leading-relaxed mb-10 text-gray-800 text-justify">
+                        A family-owned and operated business incorporated in 1949. We handle all lines of Insurance
+                        Investigations and settlements. Our founder and former Chairman of the Board, Benjamin Acosta, Sr.,
+                        founded the Insurance field in the mid-1950s, with the present name becoming known in 1948. His son,
+                        Joaquín Acosta, joined the family operation in 1972 and has presided over the company for three
+                        decades. Today, three of his sons, Joaquín Jr., Ricardo, and Gabriel, are third-generation Acosta's
+                        involved with the firm.
+                    </p>
+                    <p class="text-sm leading-relaxed mb-10 text-gray-800 text-justify">
+                        We have maintained and continue to operate under the same moral and ethical integrity that has
+                        characterized us for approximately eighty-five (85) years. During this time, we have had the privilege
+                        and honor to look after the interests of Insurers, Excess Insurers, as well as our customers – the
+                        Insureds. Benj Acosta has served the industry through the years, assisting with investigations
+                        throughout the Island, the continental United States, the Caribbean, in addition to Mexico, Central,
+                        and South America.
+                    </p>
+
+                    <h3 class="text-xl text-amber-700 mb-6 font-bold">Catastrophe Experience</h3>
+                    <p class="text-sm leading-relaxed mb-10 text-gray-800 text-justify">
+                        Since 1937 we have handled numerous catastrophes in Puerto Rico, the Caribbean, Central and South
+                        America, including major hurricanes, earthquakes, floods and fires.
+                    </p>
+
+                    <h3 class="text-xl text-amber-700 mb-6 font-bold">Major Hurricanes Handled</h3>
+                    <ul class="list-none mt-6 space-y-2">
+                        <li class="py-2 border-b border-gray-200 text-sm">
+                            <span class="text-amber-700 font-bold mr-3">•</span>
+                            Santa Clara, Betsy - Puerto Rico - 1956
+                        </li>
+                        <li class="py-2 border-b border-gray-200 text-sm">
+                            <span class="text-amber-700 font-bold mr-3">•</span>
+                            David / Frederick - Dominican Republic and Puerto Rico - 1979
+                        </li>
+                        <li class="py-2 border-b border-gray-200 text-sm">
+                            <span class="text-amber-700 font-bold mr-3">•</span>
+                            Hugo - Puerto Rico and the U.S. Virgin Islands - 1989
+                        </li>
+                        <li class="py-2 border-b border-gray-200 text-sm">
+                            <span class="text-amber-700 font-bold mr-3">•</span>
+                            Andrew - Florida - 1992
+                        </li>
+                        <li class="py-2 border-b border-gray-200 text-sm">
+                            <span class="text-amber-700 font-bold mr-3">•</span>
+                            Marilyn - Puerto Rico and the U.S. Virgin Islands - 1995
+                        </li>
+                        <li class="py-2 border-b border-gray-200 text-sm">
+                            <span class="text-amber-700 font-bold mr-3">•</span>
+                            Hortense - Puerto Rico - 1996
+                        </li>
+                        <li class="py-2 border-b border-gray-200 text-sm">
+                            <span class="text-amber-700 font-bold mr-3">•</span>
+                            Georges - Puerto Rico - 1998
+                        </li>
+                        <li class="py-2 border-b border-gray-200 text-sm">
+                            <span class="text-amber-700 font-bold mr-3">•</span>
+                            Irma / María - Puerto Rico - 2017
+                        </li>
+                        <li class="py-2 border-b border-gray-200 text-sm">
+                            <span class="text-amber-700 font-bold mr-3">•</span>
+                            Ida - Louisiana - 2021
+                        </li>
+                        <li class="py-2 border-b border-gray-200 text-sm">
+                            <span class="text-amber-700 font-bold mr-3">•</span>
+                            Fiona - Puerto Rico - 2022
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1 pl-8">
+                    <img src="imagen2.png" alt="Professional woman" class="w-full h-[700px] object-cover rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="section max-w-6xl mx-auto p-16">
+            <h1 class="text-5xl text-gray-800 mb-16 text-center">Our Team</h1>
+
+            <div class="flex gap-20 mb-24 items-center">
+                <div class="flex-1">
+                    <img src="joaquin.png" alt="Joaquín Acosta" class="w-full h-96 object-cover rounded-lg">
+                </div>
+                <div class="flex-1 pl-8">
+                    <h2 class="text-3xl text-gray-800 mb-6">Joaquín Acosta</h2>
+                    <p class="text-sm leading-relaxed text-gray-800 text-justify">
+                        President and Senior General Adjuster and Appraiser - Courses and seminars in Property, Casualty,
+                        Appraisal, Time Element and all other lines of Insurance. RPA (All Lines). Post graduate studies in
+                        Accounting and Law - Bachelor in Business Administration (Finance), Texas A&M University. Joined the
+                        firm in 1972.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex gap-20 mb-24 items-center">
+                <div class="flex-1 pr-8">
+                    <h2 class="text-3xl text-gray-800 mb-6">Benj. Acosta, Sr. (1911 – 2006)</h2>
+                    <p class="text-sm leading-relaxed text-gray-800 text-justify">
+                        Former Chairman and Senior General Adjuster and Appraiser. Studied Civil Engineering and Liberal Arts
+                        in continental United States during the early 1930 decade. Worked as Civil Engineer for the U.S.
+                        Government in 1935 and 1936. In 1937 took over the Puerto Rico Branch Office of Durgin & Co., Inc.
+                        International Adjusters, Appraisers and Assessors with headquarters at 110 William Street, NYC. The
+                        Puerto Rico Branch Office handled Fire and Allied Lines, Casualty, Bonds, Marine Cargo and Hull losses
+                        throughout the Caribbean, Central and South America. In 1948 founded Benj Acosta, Inc. and continued
+                        handling Durgin & Co., Inc. business throughout Latin America. SAMS (All Lines).
+                    </p>
+                </div>
+                <div class="flex-1">
+                    <img src="benjamin.png" alt="Benjamin Acosta Sr." class="w-full h-96 object-cover rounded-lg">
+                </div>
+            </div>
+
+            <h2 class="text-center my-20 text-3xl text-gray-800">Meet the Team</h2>
+            <div class="grid grid-cols-3 gap-12 mt-20">
+                <div class="text-center">
+                    <img src="giovanni.png" alt="Giovanni Ramos" class="w-48 h-48 rounded-full object-cover mx-auto mb-6">
+                    <h3 class="text-lg mb-3 text-gray-800">Giovanni Ramos</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Adjuster</p>
+                </div>
+                <div class="text-center">
+                    <img src="blas.png" alt="Blas Menendez" class="w-48 h-48 rounded-full object-cover mx-auto mb-6">
+                    <h3 class="text-lg mb-3 text-gray-800">Blas Menendez</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Adjuster</p>
+                </div>
+                <div class="text-center">
+                    <img src="ronald.png" alt="Ronald Santana" class="w-48 h-48 rounded-full object-cover mx-auto mb-6">
+                    <h3 class="text-lg mb-3 text-gray-800">Ronald Santana</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Property, Casualty and Automobile Adjuster</p>
+                </div>
+                <div class="text-center">
+                    <img src="maria.png" alt="María López" class="w-48 h-48 rounded-full object-cover mx-auto mb-6">
+                    <h3 class="text-lg mb-3 text-gray-800">María López</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Senior Adjuster</p>
+                </div>
+                <div class="text-center">
+                    <img src="carlos.png" alt="Carlos Rivera" class="w-48 h-48 rounded-full object-cover mx-auto mb-6">
+                    <h3 class="text-lg mb-3 text-gray-800">Carlos Rivera</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Claims Specialist</p>
+                </div>
+                <div class="text-center">
+                    <img src="ana.png" alt="Ana Rodríguez" class="w-48 h-48 rounded-full object-cover mx-auto mb-6">
+                    <h3 class="text-lg mb-3 text-gray-800">Ana Rodríguez</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Insurance Investigator</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section max-w-6xl mx-auto p-16">
+            <h1 class="text-5xl text-gray-800 mb-16">Our services.</h1>
+            <div class="grid grid-cols-3 gap-12 mb-20">
+                <div class="p-10 rounded-lg bg-gray-50">
+                    <h3 class="text-xl text-gray-800 mb-6 font-bold">Claims Investigation</h3>
+                    <p class="text-sm leading-relaxed text-gray-600 text-justify">
+                        We conduct thorough investigations of insurance claims to determine cause, scope and liability. Our experienced team uses advanced techniques to provide accurate and detailed reports.
+                    </p>
+                </div>
+                <div class="p-10 rounded-lg bg-gray-50">
+                    <h3 class="text-xl text-gray-800 mb-6 font-bold">Loss Adjustment</h3>
+                    <p class="text-sm leading-relaxed text-gray-600 text-justify">
+                        We offer professional loss adjustment services for all lines of insurance. We evaluate damages, determine applicable coverages and facilitate fair and timely settlements.
+                    </p>
+                </div>
+                <div class="p-10 rounded-lg bg-gray-50">
+                    <h3 class="text-xl text-gray-800 mb-6 font-bold">Property Appraisal</h3>
+                    <p class="text-sm leading-relaxed text-gray-600 text-justify">
+                        We provide accurate appraisal services for commercial and residential properties. Our certified appraisers deliver reliable evaluations for insurance and legal purposes.
+                    </p>
+                </div>
+                <div class="p-10 rounded-lg bg-gray-50">
+                    <h3 class="text-xl text-gray-800 mb-6 font-bold">Catastrophe Management</h3>
+                    <p class="text-sm leading-relaxed text-gray-600 text-justify">
+                        With over 85 years of experience in natural catastrophes, we efficiently handle large volumes of claims during hurricanes, earthquakes, floods and other catastrophic events.
+                    </p>
+                </div>
+                <div class="p-10 rounded-lg bg-gray-50">
+                    <h3 class="text-xl text-gray-800 mb-6 font-bold">Specialized Consulting</h3>
+                    <p class="text-sm leading-relaxed text-gray-600 text-justify">
+                        We provide specialized insurance consulting for insurance companies, agents and insureds. Our deep industry knowledge ensures effective and strategic solutions.
+                    </p>
+                </div>
+                <div class="p-10 rounded-lg bg-gray-50">
+                    <h3 class="text-xl text-gray-800 mb-6 font-bold">International Services</h3>
+                    <p class="text-sm leading-relaxed text-gray-600 text-justify">
+                        We extend our services throughout the Caribbean, Central and South America. Our international network allows us to handle complex claims in multiple jurisdictions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section max-w-6xl mx-auto p-16">
+            <div class="flex gap-20 items-start">
+                <div class="flex-1 pr-8">
+                    <h1 class="text-5xl text-gray-800 mb-10">Get in Touch</h1>
+                    <p class="text-base leading-relaxed mb-10 text-gray-600">
+                        We welcome your inquiries about our insurance investigation and settlement services. Rest assured, our
+                        team is here to guide you through the process.
+                    </p>
+
+                    <div class="mb-12">
+                        <p class="mb-3 text-base">
+                            <a href="mailto:mail@benjacosta.com" class="text-amber-700 no-underline">
+                                mail@benjacosta.com
+                            </a>
+                        </p>
+                        <p class="text-base">(787) 724-6305</p>
+                    </div>
+
+                    <form class="flex flex-col gap-6" onsubmit="handleSubmit(event)">
+                        <div class="flex gap-6">
+                            <div class="flex-1">
+                                <label for="firstName" class="block mb-2 font-bold text-gray-800">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required class="w-full p-4 border-2 border-gray-300 rounded-full text-sm outline-none focus:border-amber-700 transition-colors">
+                            </div>
+                            <div class="flex-1">
+                                <label for="lastName" class="block mb-2 font-bold text-gray-800">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required class="w-full p-4 border-2 border-gray-300 rounded-full text-sm outline-none focus:border-amber-700 transition-colors">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-bold text-gray-800">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full p-4 border-2 border-gray-300 rounded-full text-sm outline-none focus:border-amber-700 transition-colors">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 font-bold text-gray-800">Message</label>
+                            <textarea id="message" name="message" required class="w-full p-4 border-2 border-gray-300 rounded-3xl text-sm outline-none focus:border-amber-700 transition-colors h-36 resize-y"></textarea>
+                        </div>
+                        <button type="submit" class="bg-gray-800 text-white px-12 py-4 border-none rounded-full cursor-pointer text-base self-start hover:bg-gray-600 transition-colors mt-4">
+                            SEND
+                        </button>
+                    </form>
+                </div>
+                <div class="flex-1">
+                    <img src="imagen4.png" alt="Modern office" class="w-full h-[600px] object-cover rounded-lg">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-brown text-white py-20">
+        <div class="max-w-6xl mx-auto px-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-16">
+                <div class="md:col-span-2 flex items-start gap-8">
+                    <div>
+                        <img src="logo1.png" alt="Benj Acosta Logo" class="h-24 w-auto mb-6">
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-8 text-white">Benj Acosta</div>
+                        <p class="footer-brown-lighter mb-8 leading-relaxed">
+                            A family-owned insurance adjusting firm established in 1949, serving Puerto Rico, the Caribbean and
+                            beyond with integrity and excellence for over 75 years.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-8 text-white">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><button onclick="showSection('home')" class="footer-brown-light hover:text-white transition-colors cursor-pointer bg-transparent border-none text-left">Home</button></li>
+                        <li><button onclick="showSection('about')" class="footer-brown-light hover:text-white transition-colors cursor-pointer bg-transparent border-none text-left">About</button></li>
+                        <li><button onclick="showSection('team')" class="footer-brown-light hover:text-white transition-colors cursor-pointer bg-transparent border-none text-left">Team</button></li>
+                        <li><button onclick="showSection('services')" class="footer-brown-light hover:text-white transition-colors cursor-pointer bg-transparent border-none text-left">Services</button></li>
+                        <li><button onclick="showSection('contact')" class="footer-brown-light hover:text-white transition-colors cursor-pointer bg-transparent border-none text-left">Contact</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-8 text-white">Contact Info</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="footer-brown-lighter">PO Box 9020532</p>
+                            <p class="footer-brown-lighter">San Juan, PR 00902</p>
+                        </div>
+                        <div>
+                            <a href="mailto:mail@benjacosta.com" class="footer-brown-light hover:text-white transition-colors">
+                                mail@benjacosta.com
+                            </a>
+                        </div>
+                        <div>
+                            <p class="footer-brown-lighter">(787) 724-6305</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t footer-brown-border mt-16 pt-10 text-center">
+                <p class="footer-brown-light text-sm">
+                    © 2024 Benj Acosta, Inc. All rights reserved. | Licensed Insurance Adjusters & Appraisers
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionName) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                item.classList.remove('active');
+            });
+
+            const targetSection = document.getElementById(sectionName);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            const activeNavItem = document.querySelector(`[onclick="showSection('${sectionName}')"]`);
+            if (activeNavItem) {
+                activeNavItem.classList.add('active');
+            }
+
+            window.scrollTo(0, 0);
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            event.target.reset();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
